@@ -1,154 +1,208 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Aibin Yu</title>
-  <link rel="stylesheet" href="styles.css">
- 
+    <title>Aibin Yu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-  <!-- 导航栏 -->
-  <div class="navbar">
-    <div class="title">
-      Aibin Yu
-    </div>
-    <div>
-      <a class="active" href="#about">About Me</a>
-      <a href="#education">Education</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-    </div>
-    <div class="icons">
-      <a href="https://github.com/Edwin628"><img src="image/github.png" alt="GitHub"></a>
-      <a href="https://www.linkedin.com/in/aibin-yu-98629b168/"><img src="image/linkedin.png" alt="LinkedIn"></a>
-    </div>
-  </div>
-
-  <div class="header">
-  </div>
-  
-  <div class="section" id="about">
-    <h2>About Me</h2>
-    <div style="display: flex; align-items: flex-start;">
-      <div class="photo" style="margin-right: 20px;">
-        <img src="image/yab.png" alt="Your Photo">
-        <p style="text-align: center; margin-top: 10px;"><a>Shot near Chillon Castle</a></p>
-      </div>
-      <div style="flex-grow: 1;">
-        <p>My name is Aibin Yu.</p>
-        <ul>
-          <li>📍 Changsha & Lausanne</li>
-          <li>📧 <span id="email">aibin.yu@epfl.ch</span> <button class="copy-button" onclick="copyEmail()">Copy</button></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div class="section" id="experience" style="background-color: #ffffff; /* Light background color */">
-    <h2 style="font-size: 28px; font-weight: bold;">Experience</h2>
-  
-    <div class="job">
-        <div class="job-header">
-          <h3 class="company">Logitech</h3>
-          <p class="location">Lausanne, Switzerland</p>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <div class="title">
+            Aibin Yu
         </div>
-        <div class="job-details">
-          <p class="position">Engineering Intern</p>
-          <p class="time">Mar, 2024 - Aug, 2024</p>
+        <div class="nav-links">
+            <a class="nav-link" href="#about">About Me</a>
+            <a class="nav-link" href="#education">Education</a>
+            <a class="nav-link" href="#experience">Experience</a>
+            <a class="nav-link" href="#projects">Projects</a>
         </div>
-        <ul>
-          <li>Developed a system for data transmission via audio streams between web pages and various embedded devices, demonstrating demos in various potential application scenarios.</li>
-          <li>Created a web page for audio synthesis used in encoding data, implemented various algorithms for embedding audio stream data using JavaScript.</li>
-          <li>Built a simulation hardware framework with Python, designed, tested, and evaluated various DSP modulation and demodulation techniques to verify algorithm correctness.</li>
-          <li>Implemented identification, filtering, and decoding of Bluetooth audio data transmission on ESP32 microcontrollers using C++, ensuring data integrity and security.</li>
-        </ul>
-    </div>
-
-    <div class="job">
-        <div class="job-header">
-            <h3 class="company">Computer-Human Interaction in Learning and Instruction Lab</h3>
-            <p class="location">Lausanne, Switzerland</p>
+        <div class="icons">
+            <a href="https://github.com/Edwin628"><img src="image/github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/aibin-yu-98629b168/"><img src="image/linkedin.png" alt="LinkedIn"></a>
         </div>
-        <div class="job-details">
-            <p class="position">Research Assistant</p>
-            <p class="time">Sep, 2023 - Jan, 2024</p>
+    </div>
+
+    <div class="header">
+    </div>
+
+    <div class="section" id="about">
+        <h2>About Me</h2>
+        <div style="display: flex; align-items: flex-start;">
+            <div class="photo" style="margin-right: 20px;">
+                <img src="image/yab.png" alt="Your Photo">
+                <p style="text-align: center; margin-top: 10px;"><a>Shot near Chillon Castle</a></p>
+            </div>
+            <div class="bio" style="flex-grow: 1;">
+                <p>Hello, I am Aibin Yu ['aibin ju:].</p>
+                <p>I'm a Master's student in Computer Science, passionately diving into the realms of
+                    <strong>Audio-Video Transmission research</strong>,
+                    <strong>Software Engineering development</strong> and <strong>Mixed
+                        Reality and Spatial Computing</strong>.
+                </p>
+                <p>Currently, I'm enjoying the beautiful scenery of <strong>Lausanne, Switzerland</strong>. If you need
+                    to reach me, drop
+                    me a line at <strong><a id="email">edwin628yu@gmail.com</a></strong>
+                    <button class="copy-button" onclick="copyEmail()">Copy</button>
+                </p>
+                <p>I must admit, I have a soft spot for photography. And if you happen to be a proud owner of a
+                    <strong>Lumix
+                        camera</strong>, I already know you have impeccable taste! 😃📸</p>
+            </div>
         </div>
-        <ul>
-            <li>Built a novel mixed reality (MR) classroom for HoloLens using Unity and C#, creating an immersive learning environment.</li>
-            <li>Designed and implemented basic functionalities for teacher-student interaction and environmental interaction logic within the classroom system using Unity and C#.</li>
-            <li>Configured a relay SFU server using Go and Docker, and utilized WebRTC to enable streaming from HoloLens to multiple PC-based Unity applications.</li>
-        </ul>
     </div>
 
-    <div class="job">
-    <div class="job-header">
-        <h3 class="company">Logitech</h3>
-        <p class="location">Lausanne, Switzerland</p>
-    </div>
-    <div class="job-details">
-        <p class="position">Engineering Intern</p>
-        <p class="time">Feb, 2023 - Aug, 2023</p>
-    </div>
-    <ul>
-        <li>Conceptualized and evaluated software support for a novel magnetic axis keyboard, developed a C# WPF application to showcase the keyboard's unique features in everyday tasks.</li>
-        <li>Designed and packaged an SDK with the keyboard's new feature APIs for Web and Unity, facilitating cross-platform integration and usage.</li>
-        <li>Designed and developed racing and FPS games using Unity3D/C# to demonstrate the application of the simulated keyboard functions in the gaming field.</li>
-        <li>Trained machine learning models to analyze keyboard keystroke data, predict user state, and achieve personalized experiences and adaptive game controls.</li>
-    </ul>
-    </div>
-  
-    <div class="job">
-      <div class="job-header">
-        <h3 class="company">Computer-Human Interaction in Learning and Instruction Lab</h3>
-        <p class="location">Lausanne, Switzerland</p>
-      </div>
-      <div class="job-details">
-        <p class="position">Research Assistant</p>
-        <p class="time">Aug, 2022 - Feb, 2023</p>
-      </div>
-      <ul>
-        <li>Developed algorithms for reconstructing pen grip posture, utilizing conventional electronic writing devices to evaluate and assist students in correcting their grip.</li>
-        <li>Tested gesture recognition systems, validating the effectiveness of the technology on devices such as RealSense and Leap Motion using frameworks like OpenPose and MediaPipe.</li>
-        <li>Developed a data collection Windows application, capturing and analyzing pen and touch data using C# to improve data acquisition efficiency.</li>
-        <li>Trained advanced models using LSTM and Transformer architectures to reconstruct pen grip posture from capacitive images and pen data.</li>
-      </ul>
-    </div>
-  
-    <div class="job">
-      <div class="job-header">
-        <h3 class="company">Cognitive Computing and Intelligent Information Processing Lab</h3>
-        <p class="location">Wuhan, China</p>
-      </div>
-      <div class="job-details">
-        <p class="position">Research Assistant</p>
-        <p class="time">Sep, 2018 - Apr, 2019</p>
-      </div>
-      <ul>
-        <li>Worked on data processing and graphing in the project "Emotion-aware Chat Machine: Automatic Emotional Response Generation for Human-like Emotional Interaction."</li>
-        <li>Created a model based on Self-Attention that can automatically encode emotional and semantic information to generate emotional tag vectors and embed them into the emotion-biased response generation network.</li>
-      </ul>
-    </div>
-  
-    <!-- Add similar content for other job experiences -->
-  
-  </div>
-  
-  <div class="section" id="projects">
-    <h2 style="font-size: 28px; font-weight: bold;">Projects</h2>
-    <div class="project-details">
-      <h3>LGBTQ Data Analysis based on Quotebank</h3>
-      <p class="project-description">This project aims to analyze the quotation dataset Quotebank and uncover hidden information related to LGBTQ topics. It starts by using BERT language models to recognize LGBTQ topics and derives various data distribution statistics on LGBTQ. The project further explores the sentimental factor of the quotations related to LGBTQ and conducts correlation analysis on education and income levels regarding the acceptance of LGBTQ.</p>
-      <p class="project-link"><a href="https://edwin628.github.io" target="_blank">View Data Story</a></p>
-    </div>
-    <div class="project-details">
-        <h3>Peerster, a decentralized peer-to-peer communication application</h3>
-        <p class="project-description">Implemented unicast and broadcast messaging, routing, heartbeat, and anti-entropy mechanisms to ensure consistency from the node perspective. Designed a data sharing mechanism supporting file upload and download, integrated chunk processing, metadata management, and asynchronous notifications to achieve efficient data handling. Additionally, integrated blockchain consensus based on Paxos and Multi-Paxos for cross-network file naming synchronization.</p>
+
+    <div class="section" id="education">
+        <h2 style="font-size: 28px; font-weight: bold;">Education</h2>
+        <div class="education-photos">
+            <a href="https://en.wikipedia.org/wiki/Changjun_High_School" target="_blank">
+                <img src="image/changjun.svg" alt="Changjun">
+            </a>
+            <a href="https://english.hust.edu.cn/" target="_blank">
+                <img src="image/hust.svg" alt="Hust">
+            </a>
+            <a href="https://www.epfl.ch/en/" target="_blank">
+                <img src="image/epfl.svg" alt="EPFL">
+            </a>
+        </div>
     </div>
 
-  </div>
-  
+    <div class="section" id="experience" style="background-color: #ffffff; /* Light background color */">
+        <h2 style="font-size: 28px; font-weight: bold;">Experience</h2>
 
-  <div class="last-updated" id="lastUpdated"></div>
-  <script src="script.js"></script>
+        <div class="job">
+            <div class="job-header">
+                <h3 class="company">Logitech</h3>
+                <p class="location">Lausanne, Switzerland</p>
+            </div>
+            <div class="job-details">
+                <p class="position">Engineering Intern</p>
+                <p class="time">Mar, 2024 - Aug, 2024</p>
+            </div>
+            <ul>
+                <li>Developed a system for data transmission via audio streams between web pages and various embedded
+                    devices, demonstrating demos in various potential application scenarios.</li>
+                <li>Created a web page for audio synthesis used in encoding data, implemented various algorithms for
+                    embedding audio stream data using JavaScript.</li>
+                <li>Built a simulation hardware framework with Python, designed, tested, and evaluated various DSP
+                    modulation and demodulation techniques to verify algorithm correctness.</li>
+                <li>Implemented identification, filtering, and decoding of Bluetooth audio data transmission on ESP32
+                    microcontrollers using C++, ensuring data integrity and security.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <h3 class="company">Computer-Human Interaction in Learning and Instruction Lab</h3>
+                <p class="location">Lausanne, Switzerland</p>
+            </div>
+            <div class="job-details">
+                <p class="position">Research Assistant</p>
+                <p class="time">Sep, 2023 - Jan, 2024</p>
+            </div>
+            <ul>
+                <li>Built a novel mixed reality (MR) classroom for HoloLens using Unity and C#, creating an immersive
+                    learning environment.</li>
+                <li>Designed and implemented basic functionalities for teacher-student interaction and environmental
+                    interaction logic within the classroom system using Unity and C#.</li>
+                <li>Configured a relay SFU server using Go and Docker, and utilized WebRTC to enable streaming from
+                    HoloLens to multiple PC-based Unity applications.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <h3 class="company">Logitech</h3>
+                <p class="location">Lausanne, Switzerland</p>
+            </div>
+            <div class="job-details">
+                <p class="position">Engineering Intern</p>
+                <p class="time">Feb, 2023 - Aug, 2023</p>
+            </div>
+            <ul>
+                <li>Conceptualized and evaluated software support for a novel magnetic axis keyboard, developed a C# WPF
+                    application to showcase the keyboard's unique features in everyday tasks.</li>
+                <li>Designed and packaged an SDK with the keyboard's new feature APIs for Web and Unity, facilitating
+                    cross-platform integration and usage.</li>
+                <li>Designed and developed racing and FPS games using Unity3D/C# to demonstrate the application of the
+                    simulated keyboard functions in the gaming field.</li>
+                <li>Trained machine learning models to analyze keyboard keystroke data, predict user state, and achieve
+                    personalized experiences and adaptive game controls.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <h3 class="company">Computer-Human Interaction in Learning and Instruction Lab</h3>
+                <p class="location">Lausanne, Switzerland</p>
+            </div>
+            <div class="job-details">
+                <p class="position">Research Assistant</p>
+                <p class="time">Aug, 2022 - Feb, 2023</p>
+            </div>
+            <ul>
+                <li>Developed algorithms for reconstructing pen grip posture, utilizing conventional electronic writing
+                    devices to evaluate and assist students in correcting their grip.</li>
+                <li>Tested gesture recognition systems, validating the effectiveness of the technology on devices such
+                    as RealSense and Leap Motion using frameworks like OpenPose and MediaPipe.</li>
+                <li>Developed a data collection Windows application, capturing and analyzing pen and touch data using C#
+                    to improve data acquisition efficiency.</li>
+                <li>Trained advanced models using LSTM and Transformer architectures to reconstruct pen grip posture
+                    from capacitive images and pen data.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <h3 class="company">Cognitive Computing and Intelligent Information Processing Lab</h3>
+                <p class="location">Wuhan, China</p>
+            </div>
+            <div class="job-details">
+                <p class="position">Research Assistant</p>
+                <p class="time">Sep, 2018 - Apr, 2019</p>
+            </div>
+            <ul>
+                <li>Worked on data processing and graphing in the project "Emotion-aware Chat Machine: Automatic
+                    Emotional Response Generation for Human-like Emotional Interaction."</li>
+                <li>Created a model based on Self-Attention that can automatically encode emotional and semantic
+                    information to generate emotional tag vectors and embed them into the emotion-biased response
+                    generation network.</li>
+            </ul>
+        </div>
+
+        <!-- Add similar content for other job experiences -->
+
+    </div>
+
+    <div class="section" id="projects" style="background-color: #ffffff; /* Light background color */">
+        <h2 style="font-size: 28px; font-weight: bold;">Projects</h2>
+        <div class="project-details">
+            <h3>LGBTQ Data Analysis based on Quotebank</h3>
+            <p class="project-description">This project aims to analyze the quotation dataset Quotebank and uncover
+                hidden information related to LGBTQ topics. It starts by using BERT language models to recognize LGBTQ
+                topics and derives various data distribution statistics on LGBTQ. The project further explores the
+                sentimental factor of the quotations related to LGBTQ and conducts correlation analysis on education and
+                income levels regarding the acceptance of LGBTQ.</p>
+            <p class="project-link"><a href="https://edwin628.github.io" target="_blank">View Data Story</a></p>
+        </div>
+        <div class="project-details">
+            <h3>Peerster, a decentralized peer-to-peer communication application</h3>
+            <p class="project-description">Implemented unicast and broadcast messaging, routing, heartbeat, and
+                anti-entropy mechanisms to ensure consistency from the node perspective. Designed a data sharing
+                mechanism supporting file upload and download, integrated chunk processing, metadata management, and
+                asynchronous notifications to achieve efficient data handling. Additionally, integrated blockchain
+                consensus based on Paxos and Multi-Paxos for cross-network file naming synchronization.</p>
+        </div>
+
+    </div>
+
+
+    <div class="last-updated" id="lastUpdated"></div>
+    <script src="script.js"></script>
 </body>
+
 </html>

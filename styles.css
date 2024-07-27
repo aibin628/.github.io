@@ -1,214 +1,267 @@
-
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column; /* Arrange sections in a vertical column */
-  align-items: center; /* Center sections horizontally */
-  min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    /* Arrange sections in a vertical column */
+    align-items: center;
+    /* Center sections horizontally */
+    min-height: 100vh;
 }
-h1, h2 {
-  margin: 0;
+
+h1,
+h2 {
+    margin: 0;
 }
+
 .header {
-  text-align: center;
-  padding-top: 60px;
+    text-align: center;
+    padding-top: 60px;
 }
+
 .photo {
-  text-align: left;
-  display: inline-block;
-  vertical-align: top;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
 }
+
 .photo img {
-  width: 200px;
-  border-radius: 10%;
-  margin-bottom: 10px;
-}
-.section {
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Set section width to 100% */
-  max-width: 1000px; /* Limit section width for readability */
-}
-.section h2 {
-  margin-bottom: 10px;
-}
-.section p {
-  margin: 0;
-}
-/* 导航栏样式 */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #f1f1f1;
-  overflow: hidden;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
-.navbar .title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-right: 10px;
-}
-.navbar a {
-  float: left;
-  color: #000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.navbar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-.navbar .icons {
-  display: flex;
-  align-items: center;
-}
-.navbar .icons img {
-  width: 30px;
-  height: 30px;
-  margin-left: 10px;
-  cursor: pointer;
-}
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-.image-grid img {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
+    width: 200px;
+    border-radius: 10%;
+    margin-bottom: 10px;
 }
 
-/* CSS Styles */
-.section .job {
-  margin-bottom: 30px;
-  padding: 30px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.photo p {
+    font-style: italic;
 }
 
-.section .job .job-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.section .job .company {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.section .job .location {
-  font-size: 18px;
-  color: #888;
-  margin: 0;
-}
-
-.section .job .job-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.section .job .position {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.section .job .time {
-  font-size: 16px;
-  color: #888;
-  margin: 0;
-}
-
-.section .job ul {
-  margin-top: 10px;
-  padding-left: 20px;
-}
-
-.section .job li {
-  margin-bottom: 10px;
+.section .bio p {
+    margin-bottom: 10px; 
 }
 
 .copy-button {
-  display: inline-block;
-  padding: 5px 10px;
-  background-color: #4CAF50;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 10px;
-  margin-left: 2px;
-  cursor: pointer;
+    background-color: #b0b0b0; /* 柔和的灰色 */
+    color: white;
+    border: none;
+    padding: 3px 6px; /* 更小的内边距 */
+    cursor: pointer;
+    border-radius: 3px; /* 更小的圆角 */
+    font-family: 'Lato', sans-serif;
+    font-size: 12px; /* 更小的字体 */
+    transition: background-color 0.3s ease;
 }
 
 .copy-button:hover {
-  background-color: #45a049;
+    background-color: #a0a0a0; /* 更深一点的灰色 */
 }
 
 .copy-button:active {
-  background-color: #3d9141;
+    background-color: #909090; /* 再深一点的灰色 */
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* Set section width to 100% */
+    max-width: 1000px;
+    /* Limit section width for readability */
+}
+
+.section h2 {
+    margin-bottom: 10px;
+}
+
+.section p {
+    margin: 0;
+}
+
+/* 导航栏样式 */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.navbar a {
+    float: left;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar .nav-links a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navbar .icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .icons img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.education-photos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.education-photos a {
+    text-decoration: none;
+}
+
+.education-photos img {
+    width: 200px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+
+.section .job {
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section .job .job-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section .job .company {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section .job .location {
+    font-size: 18px;
+    color: #888;
+    margin: 0;
+}
+
+.section .job .job-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.section .job .position {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section .job .time {
+    font-size: 16px;
+    color: #888;
+    margin: 0;
+}
+
+.section .job ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.section .job li {
+    margin-bottom: 10px;
 }
 
 .section .project-details {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .section .project-details h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
 }
 
 .section .project-details .project-description {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
 }
 
 .section .project-details .project-link {
-  margin-top: 15px;
+    margin-top: 15px;
 }
 
 .section .project-details .project-link a {
-  display: inline-block;
-  padding: 8px 15px;
-  background-color: #4CAF50;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 14px;
-  cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .section .project-details .project-link a:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
 .section .project-details .project-link a:active {
-  background-color: #3d9141;
+    background-color: #3d9141;
+}
+
+/* 高亮样式 */
+.highlight {
+    background-color: #FFFF00;
+    font-weight: bold;
 }
